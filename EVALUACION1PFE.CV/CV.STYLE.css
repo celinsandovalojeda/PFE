@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 100px;
+  color: #0c010e;
+}
+
+.cv-container {
+  background-color: #f5e9f1;
+  max-width: 1500px;
+  margin: auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-height: 100vh;
+}
+
+/* Fila superior: imagen + informacion */
+.fila-superior {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.FOTO {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ecc5dc;
+}
+
+.nombre h1 {
+  font-size: 40px;
+  background-color: #be6198;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.cargo {
+  background-color: #ecc5dc; 
+  padding: 5px 20px; 
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Fila del medio: Perfil Profesional y Datos Personales */
+.fila-medio {
+  border-top: 1px solid #ccc;
+  display: flex;
+  gap: 50px;
+  padding-top: 30px;
+  margin-bottom: 50px;
+}
+
+/* Fila del medio 2: Experiencia Laboral y Formación Académica */
+.fila-medio2 {
+  border-top: 1px solid #ccc;
+  display: flex;
+  gap: 50px;
+  padding-top: 30px; 
+  margin-bottom: 50px; 
+}
+
+.DESCRIPCION, .DATOS, .EXPERIENCIA, .ESTUDIOS, .CONTACTO {
+  width: 50%;
+}
+
+
+.DESCRIPCION h3,
+.DATOS h3,
+.EXPERIENCIA h3,
+.ESTUDIOS h3,
+.CONTACTO h3 {
+  font-size: 30px;
+  margin-bottom: 10px; 
+  color: #0c010e;
+  padding-bottom: 10px;
+  background-color: #be6198;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+
+
+.DESCRIPCION p,
+.DATOS ul,
+.EXPERIENCIA ul,
+.ESTUDIOS ul,
+.CONTACTO p {
+  font-size: 15px;
+  line-height: 1.8;
+  background-color: #ecc5dc;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  color: #26302e;
+  padding-top: 20px;
+}
+
+.EXPERIENCIA ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.EXPERIENCIA li {
+  margin-bottom: 5px;
+}
+
+/* Fila inferior: CONTACTO */
+.CONTACTO {
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
